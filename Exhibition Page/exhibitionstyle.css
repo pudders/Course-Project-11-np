@@ -1,0 +1,113 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: monospace;
+    background-color: rgb(181, 173, 157);
+    background-image:url(bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   /* navbar start */
+.navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(181, 173, 157);
+    color: rgb(0, 0, 0);
+   }
+   .nav-links a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+   }
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: xx-large;
+   }
+   .menu li:hover {
+    background-color: rgb(255, 237, 220);
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 10px 10px;
+   }
+     /* dropdown menu start */
+   .services {
+    position:relative;
+    }
+    .dropdown {
+    background-color: rgb(181, 173, 157);
+    margin-top: 10px;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    border-radius: 8px;
+    font-size: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 100%;
+    display: none;
+   }
+   .dropdown li {
+    margin-top: 0px;
+    width:min-content;
+    text-align: center;
+    width: 100%;
+   }
+   .dropdown li:hover {
+    background-color: rgb(255, 237, 220);
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+/* dropdown menu end */
+    /* navbar end */
+
+
+/* Cubism Header and text start */
+#CubismHeader {
+  margin-top: 40px; margin-bottom: 30px; margin-left: 50px;
+  font-weight: bolder; color: #3B2042;
+  }
+  
+#CubismText {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  margin-left: 50px;
+  color: #3B2042
+}
+
+
+/* Cubism Header and text end */
+
+
+/* carousel start */
+#carouselcontrols {
+  border-style: ridge; border-width: 15px;
+  margin: 40px;
+  padding: 25px;
+}
+
+h5 {
+  font-size: larger; font-style: italic; font-weight: bolder;
+}
+
+#carouseltext {
+  font-style: italic;
+}
+
+/* carousel start */

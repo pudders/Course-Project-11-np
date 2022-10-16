@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact page</title>
+</head>
+<body>
+     <!--nabar start-->
+     <nav class="navbar">
+        <ul class="nav-links">
+          <div class="menu">
+            <li><a href="<!--LINK TO HOME PAGE-->">Home</a></li>
+            <li><a href="<!--LINK TO COLLECTIONS PAGE-->">Collections</a></li>
+            <li class="services">
+              <a href="<!--LINK TO GALLERY PAGE-->">Artists <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="<!--LINK TO ARTIST 1 PAGE-->">Artist 1 name </a></li>
+                <li><a href="<!--LINK TO ARTIST 2 PAGE-->">Artist 2 name </a></li>
+                <li><a href="<!--LINK TO ARTIST 3 PAGE-->">Artist 3 name </a></li>
+              </ul>
+            </li>
+            <li><a href="<!--LINK TO EVENT PAGE-->">Events</a></li>
+            <li><a href="<!--LINK TO CONTACT PAGE-->">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+       <!--nabar end-->
+       <!--Contact form start-->
+       <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Get in touch</h1>
+          <p id="description" class="description text-center">
+            Thank you for contacting us
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="form-control"
+              placeholder="Enter subject"
+            />
+          </div>
+          <div class="form-group">
+            <p>Message</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your message here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <p>How did you hear about us<span class="clue">(optional)</span>?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="student">On social media</option>
+              <option value="job">From a friend</option>
+              <option value="learner">Through work</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Would you recommend Gallery 11 to a friend<span class="clue">(optional)</span>?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Not sure</label
+            >
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+ <!--Contact form end-->
+<!--footer start-->
+    <footer class="footer">
+        <a href="https://twitter.com" target="_blank">
+            <span class='social-icon'><i class="fa fa-twitter"></i></span>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <span class='social-icon'><i class="fa fa-facebook-f"></i></span>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <span class='social-icon'><i class="fa fa-instagram"></i></span>
+          </a>
+      </footer>
+<!---footer end-->
+</body>
+</html>
