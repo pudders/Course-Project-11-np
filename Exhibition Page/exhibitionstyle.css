@@ -79,8 +79,9 @@
 
 
 /* Cubism Header and text start */
+.carouselslide {width: 75%; display: flex; align-items: center;}
 #CubismHeader {
-  margin-top: 40px; margin-bottom: 30px; margin-left: 50px;
+  margin-top: 40px; margin-bottom: 30px; margin-left: 40px; padding-left: 5%;
   font-weight: bolder; color: #3B2042;
   }
   
@@ -96,6 +97,7 @@
 
 
 /* carousel start */
+
 #carouselcontrols {
   border-style: ridge; border-width: 15px;
   margin: 40px;
@@ -110,4 +112,24 @@ h5 {
   font-style: italic;
 }
 
-/* carousel start */
+/* carousel end*/
+
+/*footer start*/
+.footer{
+  display: flex;
+  position:relative;
+  align-items:center;
+  justify-content: space-evenly;
+  padding: 10px;
+  height:auto;
+  background-color: rgb(181, 173, 157);
+  color: rgb(0, 0, 0);
+  height: 4.5rem;
+  width:100%;
+}
+.footer a {
+  margin-top: auto 0;
+  text-decoration: none;
+  size:100rem;
+}
+/*footer end*/
