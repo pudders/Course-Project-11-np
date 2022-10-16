@@ -1,0 +1,146 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: monospace;
+    background-color: rgb(255, 237, 220);
+    background-image:url(bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   /* navbar start */
+.navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(181, 173, 157);
+    color: rgb(0, 0, 0);
+   }
+   .nav-links a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+   }
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: xx-large;
+   }
+   .menu li:hover {
+    background-color: rgb(255, 237, 220);
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 10px 10px;
+   }
+     /* dropdown menu start */
+   .services {
+    position:relative;
+    }
+    .dropdown {
+    background-color: rgb(181, 173, 157);
+    margin-top: 10px;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    border-radius: 8px;
+    font-size: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 100%;
+    display: none;
+   }
+   .dropdown li {
+    margin-top: 0px;
+    width:min-content;
+    text-align: center;
+    width: 100%;
+   }
+   .dropdown li:hover {
+    background-color: rgb(255, 237, 220);
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+/* dropdown menu end */
+    /* navbar end */
+/*artist 1 start*/
+#artist1_frame {
+    position: relative;
+    left: 120px;
+    top: 80px;
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+}
+.a1_text {
+width: fit-content;
+font-size: xx-large;
+margin-left: 225px;
+margin-top: 80px;
+}
+.a1_text a {
+    color: black;
+}
+.a1_text a:hover {
+    color: rgba(255, 153, 0, 0.856);
+}
+/*artist 1 end*/
+/*artist 2 start*/
+#artist2_frame {
+    position: relative;
+    left: 650px;
+    top: -300px;
+    width: 550px;
+    height: auto;
+    max-width: 100%;
+}
+.a2_text {
+width: fit-content;
+font-size: xx-large;
+margin-left: 825px;
+margin-top: -300px;
+padding-bottom: 150px;
+}
+.a2_text a {
+    color: black;
+}
+.a2_text a:hover {
+    color: rgba(255, 153, 0, 0.856);
+}
+/*artist 2 end*/
+/*artist 3 start*/
+#artist3_frame {
+    position: relative;
+    left: 1350px;
+    top: -820px;
+    width:400px;
+    height: auto;
+    max-width: 100%;
+}
+.a3_text {
+    width: fit-content;
+    font-size: xx-large;
+    margin-left: 1450px;
+    margin-top: -820px;
+    padding-bottom: 120px;
+}
+.a3_text a {
+    color: black;
+}
+.a3_text a:hover {
+    color: rgba(255, 153, 0, 0.856);
+}
+/*artist 3 end*/
