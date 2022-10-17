@@ -79,7 +79,15 @@
 
 
 /* Cubism Header and text start */
-.carouselslide {width: 75%; display: flex; align-items: center;}
+.cubismblock {
+background-image: url(./Images2/brownmottled.jpg);
+}
+.carouselparent {
+  display: flex;
+  align-content: center;
+  margin-left: 10%;
+}
+
 #CubismHeader {
   margin-top: 40px; margin-bottom: 30px; margin-left: 40px; padding-left: 5%;
   font-weight: bolder; color: #3B2042;
@@ -88,12 +96,56 @@
 #CubismText {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bolder;
-  margin-left: 50px;
+  margin-left: 50px; margin-right: 50px;
   color: #3B2042
 }
-
-
 /* Cubism Header and text end */
+
+
+/* Surrealism Header and text start */
+.surrealismblock {
+  background-image: url(./Images2/bluemottled.jpg);
+}
+.carouselparent {
+  display: flex;
+  align-content: center;
+  margin-left: 10%;}
+
+#SurrealismHeader {
+  margin-top: 40px; margin-bottom: 30px; margin-left: 40px; padding-left: 5%;
+  font-weight: bolder; color: #3B2042;
+  }
+  
+#SurrealismText {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  margin-left: 50px; margin-right: 50px;
+  color: #3B2042
+}
+/* Surrealism Header and text end */
+
+/* Pop Art Header and text start */
+.popartblock {
+  background-image: url(./Images2/pinkmottled.png);
+}
+.carouselparent {
+  display: flex;
+  align-content: center;
+  margin-left: 10%;}
+
+#PopartHeader {
+  margin-top: 40px; margin-bottom: 30px; margin-left: 40px; padding-left: 5%;
+  font-weight: bolder; color: #3B2042;
+  }
+  
+#PopartText {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  margin-left: 50px; margin-right: 50px;
+  color: #3B2042
+}
+/* Pop Art Header and text end */
+
 
 
 /* carousel start */
@@ -113,6 +165,17 @@ h5 {
 }
 
 /* carousel end*/
+
+
+/* linebreak start */
+
+.breaker {    
+  display: flex;
+  align-self: center;
+}
+
+/* linebreak end */
+
 
 /*footer start*/
 .footer{
