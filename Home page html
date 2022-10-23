@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./home_page.css">
+    <title>Home page</title>
+</head>
+<body>
+     <!--nabar start-->
+     <nav class="navbar">
+
+        <ul class="nav-links">
+          <div class="menu">
+            <li><a href="<!--LINK TO HOME PAGE-->">Home</a></li>
+            <li><a href="<!--LINK TO COLLECTIONS PAGE-->">Collections</a></li>
+            <li class="services">
+              <a href="<!--LINK TO GALLERY PAGE-->">Artists <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="<!--LINK TO ARTIST 1 PAGE-->">Artist 1 name </a></li>
+                <li><a href="<!--LINK TO ARTIST 2 PAGE-->">Artist 2 name </a></li>
+                <li><a href="<!--LINK TO ARTIST 3 PAGE-->">Artist 3 name </a></li>
+              </ul>
+            </li>
+            <li><a href="<!--LINK TO EVENT PAGE-->">Events</a></li>
+            <li><a href="<!--LINK TO CONTACT PAGE-->">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+       <!--nabar end-->   
+       
+<div class="main">
+
+  <div class="space">
+    <h1> Some title</h1>
+  </div> 
+
+  <!--carousel start-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active image">
+        <img src="https://3minutosdearte.com/wp-content/uploads/2017/02/Dal%C3%AD-La-tentaci%C3%B3n-de-San-Antonio-1946-e1578173095880.jpg" class="image_size" class="d-block w-100" id="center" alt="Dali">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item image">
+        <img src="https://d7hftxdivxxvm.cloudfront.net/?resize_to=fit&width=617&height=800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FyjU1ZehLFZRMa1xqRSnmLA%2Fnormalized.jpg" class="image_size" id="center" class="d-block w-100" alt="Masson">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item image">
+        <img src="https://cdn.theatlantic.com/thumbor/gBp0QuW3t0iIVx7ewZ0BluxPhE4=/1x0:1330x1661/648x810/media/img/2022/09/29/WarholFairUse_RightSize/original.jpg" class="image_size"class="d-block w-100" id="center" alt="Warhol">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+  <!--End carousel-->
+
+    <div class="Exhibitions">
+      <img src ="#" alt=""/>
+      <img src ="#" alt=""/>
+      <img src ="#" alt=""/>
+    </div>
+
+    <div class="Artist"></div>
+
+    <div class="Shop">
+      <img src="#"/>
+    </div>
+
+  
+       <!--footer start-->
+    <footer class="footer">
+        <a href="https://twitter.com" target="_blank">
+            <span class='social-icon'><i class="fa fa-twitter"></i></span>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <span class='social-icon'><i class="fa fa-facebook-f"></i></span>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <span class='social-icon'><i class="fa fa-instagram"></i></span>
+          </a>
+      </footer>
+<!---footer end-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
