@@ -1,0 +1,293 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: monospace;
+    background-color: rgb(181, 173, 157);
+    background-image:url(bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   /* navbar start */
+.navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(181, 173, 157);
+    color: rgb(0, 0, 0);
+   }
+   .nav-links a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+   }
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: xx-large;
+   }
+   .menu li:hover {
+    background-color: rgb(255, 237, 220);
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 10px 10px;
+   }
+     /* dropdown menu start */
+   .services {
+    position:relative;
+    }
+    .dropdown {
+    background-color: rgb(181, 173, 157);
+    margin-top: 10px;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    border-radius: 8px;
+    font-size: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 100%;
+    display: none;
+   }
+   .dropdown li {
+    margin-top: 0px;
+    width:min-content;
+    text-align: center;
+    width: 100%;
+   }
+   .dropdown li:hover {
+    background-color: rgb(255, 237, 220);
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+/* dropdown menu end */
+    /* navbar end */
+
+/* Main Shopping Page start */
+
+	.container {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  text-align: center;
+
+	}
+
+
+	.column {
+	  padding: 25px;
+	  height: 400px;
+	  margin: 5px;
+	  background-color: rgb(181, 173, 157);
+	}
+
+  
+    h2 {
+      font-size: medium; font-weight: 600  ;
+    }
+
+    .Shopintro {
+      font-size:larger;
+      font-weight: 500;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      margin-left: 80px;
+      margin-right: 80px;
+      text-align: center;
+    }
+
+    .button {
+      --background: #59A48D;
+      --text: #fff;
+      --cart: #fff;
+      --tick: var(--background);
+      position: relative;
+      border: none;
+      background: none;
+      padding: 10px 5px;
+      border-radius: 8px;
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      overflow: hidden;
+      cursor: pointer;
+      text-align: center;
+      min-width: 100px;
+      color: var(--text);
+      background: var(--background);
+      transform: scale(var(--scale, 1));
+      transition: transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
+      }
+      .button:active {
+      --scale: 0.95;
+      }
+      .button span {
+      font-size: 10px;
+      font-weight: 500;
+      display: block;
+      position: relative;
+      padding-left: 24px;
+      margin-left: -4px;
+      line-height: 26px;
+      transform: translateY(var(--span-y, 0));
+      transition: transform 0.7s ease;
+      }
+      .button span:before, .button span:after {
+      content: '';
+      width: var(--w, 2px);
+      height: var(--h, 14px);
+      border-radius: 1px;
+      position: absolute;
+      left: var(--l, 8px);
+      top: var(--t, 6px);
+      background: currentColor;
+      transform: scale(0.75) rotate(var(--icon-r, 0deg)) translateY(var(--icon-y, 0));
+      transition: transform 0.65s ease 0.05s;
+      }
+      .button span:after {
+      --w: 14px;
+      --h: 2px;
+      --l: 2px;
+      --t: 12px;
+      }
+      .button .cart {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -13px 0 0 -18px;
+      transform-origin: 12px 23px;
+      transform: translateX(-120px) rotate(-18deg);
+      }
+      .button .cart:before, .button .cart:after {
+      content: '';
+      position: absolute;
+      }
+      .button .cart:before {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 2px var(--cart);
+      bottom: 0;
+      left: 9px;
+      filter: drop-shadow(11px 0 0 var(--cart));
+      }
+      .button .cart:after {
+      width: 16px;
+      height: 9px;
+      background: var(--cart);
+      left: 9px;
+      bottom: 7px;
+      transform-origin: 50% 100%;
+      transform: perspective(4px) rotateX(-6deg) scaleY(var(--fill, 0));
+      transition: transform 1.2s ease var(--fill-d);
+      }
+      .button .cart svg {
+      z-index: 1;
+      width: 30px;
+      height: 20px;
+      display: block;
+      position: relative;
+      fill: none;
+      stroke: var(--cart);
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      }
+      .button .cart svg polyline:last-child {
+      stroke: var(--tick);
+      stroke-dasharray: 10px;
+      stroke-dashoffset: var(--offset, 10px);
+      transition: stroke-dashoffset 0.4s ease var(--offset-d);
+      }
+      .button.loading {
+      --scale: 0.95;
+      --span-y: -32px;
+      --icon-r: 180deg;
+      --fill: 1;
+      --fill-d: 0.8s;
+      --offset: 0;
+      --offset-d: 1.73s;
+      }
+      .button.loading .cart {
+      animation: cart 3.4s linear forwards 0.2s;
+      }
+      @keyframes cart {
+      12.5% {
+      transform: translateX(-60px) rotate(-18deg);
+      }
+      25%, 45%, 55%, 75% {
+      transform: none;
+      }
+      50% {
+      transform: scale(0.9);
+      }
+      44%, 56% {
+      transform-origin: 12px 23px;
+      }
+      45%, 55% {
+      transform-origin: 50% 50%;
+      }
+      87.5% {
+      transform: translateX(70px) rotate(-18deg);
+      }
+      100% {
+      transform: translateX(140px) rotate(-18deg);
+      }
+      }
+      html {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      }
+      * {
+      box-sizing: inherit;
+      }
+      *:before, *:after {
+      box-sizing: inherit;
+      }
+      body {
+      min-height: 100vh;
+      font-family: 'Inter UI', 'Inter', Arial;
+      justify-content: center;
+      align-items: center;
+      background: #eceffc;
+      padding-top: 30px;
+      }
+
+
+/* Main Shopping Page end */
+
+
+
+
+/*footer start*/
+.footer{
+    display: flex;
+    position:relative;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
+    height:auto;
+    background-color: rgb(181, 173, 157);
+    color: rgb(0, 0, 0);
+    height: 4.5rem;
+    width:100%;
+  }
+  .footer a {
+    margin-top: auto 0;
+    text-decoration: none;
+    size:100rem;
+  }
+  /*footer end*/
