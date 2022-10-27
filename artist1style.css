@@ -1,0 +1,162 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: monospace;
+    background-color: rgb(255, 237, 220);
+    background-image:url(bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+
+   /* navbar start */
+.navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(181, 173, 157);
+    color: rgb(0, 0, 0);
+    
+   }
+   .nav-links a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    
+   }
+   
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: xx-large;
+   }
+   .menu li:hover {
+    background-color: rgb(255, 237, 220);
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 10px 10px;
+   }
+   /* dropdown menu start */
+   .services {
+    position:relative; 
+    }
+  
+    .dropdown {
+    background-color: rgb(181, 173, 157);
+    margin-top: 10px;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    border-radius: 8px;
+    font-size: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 100%;
+    display: none;
+   }
+   .dropdown li {
+    margin-top: 0px;
+    width:min-content;
+    text-align: center;
+    width: 100%;
+   }
+
+   .dropdown li:hover {
+    background-color: rgb(255, 237, 220);
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+/* dropdown menu end */
+   /* navbar end */
+
+/*Buttons start*/
+
+.nav_buttons {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1300px;
+    margin-top: 100px;
+}
+
+.nav_buttons a {
+
+    color: black;
+}
+
+#backbutton, #forwardbutton {
+
+    display: inline;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 10px;
+    border-style: dashed;
+    background-color: rgb(196, 152, 58);
+   
+}
+
+
+
+/*Buttons end*/
+
+
+/*artist 1 start*/
+
+#artist1_frame {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: auto;
+    max-width: 100%;
+    margin-left: 350px;
+
+    
+}
+
+#textbox {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    color: black;
+    width: 500px;
+    height:240;
+    background-image: linear-gradient(rgb(245, 226, 167, 0.4), rgb(167, 126, 80, 0.4),rgb(141, 106, 68, 0.4));
+    border-color:rgb(245, 226, 167, 0.4);
+    border-style:groove;
+    padding: 20px;
+    margin-top: -100px;
+
+}
+
+#artist1_frame, #textbox {
+
+    display: inline-block;
+    
+}
+
+
+
+/*artist 1 end*/
+
+

@@ -1,0 +1,232 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: monospace;
+    background-color: rgb(255, 237, 220);
+    background-image:url(bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+
+   /* navbar start */
+.navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(181, 173, 157);
+    color: rgb(0, 0, 0);
+    
+   }
+   .nav-links a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    
+   }
+   
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: xx-large;
+   }
+   .menu li:hover {
+    background-color: rgb(255, 237, 220);
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 10px 10px;
+   }
+   /* dropdown menu start */
+   .services {
+    position:relative; 
+    }
+  
+    .dropdown {
+    background-color: rgb(181, 173, 157);
+    margin-top: 10px;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    border-radius: 8px;
+    font-size: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 100%;
+    display: none;
+   }
+   .dropdown li {
+    margin-top: 0px;
+    width:min-content;
+    text-align: center;
+    width: 100%;
+   }
+
+   .dropdown li:hover {
+    background-color: rgb(255, 237, 220);
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+    /* dropdown menu end */
+/* navbar end */
+
+/*aligning frames start*/
+
+.frames_position {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  .frames::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*aligning frames end*/
+
+/*artist 1 start*/
+
+#artist1_frame {
+   
+    display: flexbox;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 150px;
+    
+}
+
+.a1_text {
+
+    display: flexbox;
+    width: fit-content;
+    font-size: xx-large;
+    
+    margin-top: 80px;
+}
+
+.a1_text a {
+
+    color: black;
+}
+
+.a1_text a:hover {
+
+    color: rgba(255, 153, 0, 0.856);
+}
+
+/*artist 1 end*/
+
+/*artist 2 start*/
+
+#artist2_frame {
+    
+    display: flexbox;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-top: 250px;
+    margin-left: 100px;
+
+    
+
+    
+}
+
+.a2_text {
+
+width: fit-content;
+font-size: xx-large;
+
+margin-top: 90px;
+
+
+}
+
+.a2_text a {
+
+    color: black;
+}
+
+.a2_text a:hover {
+
+    color: rgba(255, 153, 0, 0.856);
+}
+
+/*artist 2 end*/
+
+/*artist 3 start*/
+
+#artist3_frame {
+    
+    display: flexbox;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 150px;
+    float: right;
+
+
+        
+}
+
+.a3_text {
+   
+    width: fit-content;
+    font-size: xx-large;
+    margin-top: 90px;
+    
+    
+
+
+}
+
+.a3_text a {
+    color: black;
+}
+
+.a3_text a:hover {
+
+    color: rgba(255, 153, 0, 0.856);
+}
+
+/*artist 3 end*/
+
+/*footer start*/
+.footer{
+    display: flex;
+    position:relative;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
+    height:auto;
+    background-color: rgb(181, 173, 157);
+    color: rgb(0, 0, 0);
+    height: 4.5rem;
+    width:100%;
+}
+  .footer a {
+    margin-top: auto 0;
+    text-decoration: none;
+    size:100rem;
+  }
+/*footer end*/
